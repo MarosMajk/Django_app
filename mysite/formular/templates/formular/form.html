@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Simple Form Task</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{%static 'css/main.css'%}" />
+		<noscript><link rel="stylesheet" href="{%static 'css/noscript.css'%}"/></noscript>
+	</head>
+	<body class="is-preload">
+		<div class="topnav" id="myTopnav">
+			<a href="/admin" class="active">Admin</a>
+		</div>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Formulár</h1>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<h2>Django Form</h2>
+								<p>
+									<form method="post">
+										{% csrf_token %}
+										{{ form }}
+										<button type="submit">Potvrdiť</button>
+									</form>
+                                </p>
+							</section>
+					</div>
+			</div>
+
+
+	</body>
+</html>
