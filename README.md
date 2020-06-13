@@ -1,1 +1,3 @@
-# Django_app
+# Django_app task
+
+#Priebeh inštalácie
