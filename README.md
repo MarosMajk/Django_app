@@ -18,6 +18,12 @@ Aplikáciu spustíme pomocou python manage.py runserver
 $ cd mysite
 $ python manage.py runserver
 ```
+Prihlasovanie sa do admin zóny pomocou údajov:
+
+```sh
+login: Proboston
+pwd:  filip123
+```
 
 ### Balíčky
 
